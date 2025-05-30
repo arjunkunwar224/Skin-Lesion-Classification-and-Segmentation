@@ -1,0 +1,8 @@
+test/
+train/
+val/
+Processed_images/
+uploads/
+venv/
+2UNET.keras
+6CNN_Model.keras
