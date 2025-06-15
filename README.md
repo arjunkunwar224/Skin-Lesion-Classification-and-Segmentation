@@ -1,26 +1,17 @@
 # Skin lesion classification and Segmentation.
+In this project, I have used the HAM10000 dataset for both skin lesion classification and segmentation. The dataset was sourced from Kaggle and the Harvard Dataverse. Specifically, the segmentation masks are available through the Harvard Dataverse, and I have included the dataset link below.
 
-Here, I have used the Ham10000 dataset for the classification and segmentation which i have taken from the kaggle and harvard dataverse, the segmented dataset is in the harvard dataverse i have given the link of the dataset below.
+🔹 Classification Using CNN
 
-# For CNN
-In this project i have built the CNN model from the scratch and trained it to classify the seven types of lesion.
-In the data preprocessing, as the data set was imbalanced so, I have increased the no. of images which has less than 5000 image and taken randomly 5000 images which has more than 5000 images and accordingly a new metadata is created.
-In the augmentation, I have applied rotation,shift,shear,flip,contrast,etc. Then i have splitted the dataset into (70:20:10)
+For the classification task, I built a Convolutional Neural Network (CNN) from scratch to classify skin lesions into seven categories. Since the dataset was imbalanced, I applied class balancing strategies:
+-> For classes with fewer than 5,000 images, I increased the number using augmentation.
+-> For classes with more than 5,000 images, I randomly selected 5,000 samples. Based on this, a new metadata file was generated.
 
-# For U-NET
-The model for the U-NET is also custom built where all the corresponding mask images are there and there i have not applied any augumentation to increase the images i have trained using the 10015 images only for the segmentation.
+->For data augmentation, I applied techniques such as rotation, shifting, shearing, flipping, and contrast adjustments. The dataset was then split into training, validation, and testing sets in a 70:20:10 ratio.
 
-# Output
-<img src="uploads\Screenshot (157).png" alt="Front page" width="400"/>
+🔹 Segmentation Using U-Net
 
-<img src="uploads\Screenshot (158).png" alt="CNN Graph" width="400"/>
-
-<img src="uploads\Screenshot (159).png" alt="UNET Graph" width="400"/>
-
-<img src="uploads\Screenshot (161).png" alt="OUTPUT" width="400"/>
-
-
-
+For the segmentation task, I also built a custom U-Net model. The dataset includes corresponding mask images for each input image. In this case, no additional augmentation was performed. The model was trained using 10,015 paired images.
 
 
 Dataset link:
