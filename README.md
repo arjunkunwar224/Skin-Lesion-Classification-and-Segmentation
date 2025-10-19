@@ -18,3 +18,5 @@ Dataset link:
 1. https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T
 
 2. https://www.kaggle.com/kmader/skin-cancer-mnist-ham10000
+
+And this was Minor project of my academic year, completed in collboration with 2 other Teammates.
